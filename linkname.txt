@@ -1,4 +1,5 @@
 songpa
+gangnam
 gangdong
 guro
 yongin
@@ -8,5 +9,6 @@ busan
 daejeon
 ulsan
 sejong
+jeju
 bucheon
 daegu

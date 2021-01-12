@@ -25,9 +25,13 @@ for i in range(leng):
     # attrs = {ttypes[i][:-1] : tnames[i][:-1]}
     try:
         table = pd.concat(pd.read_html(lines[i][:-1],match = '노출일시'))
+        print(locs[i])
+        if locs[i][:-1] == 'gangnam':
+            print("gangnam style")
+            table = pd.concat(pd.read_html(lines[i][:-1],match = '서울시'))
         table.to_csv(os.path.join(BASE_DIR, 'data/'+ str(datetime.today())[:10] + locs[i][:-1] +'.csv'))
-        print(table)
-        print(str(datetime.today())[:10])
+        # print(table)
+        # print(str(datetime.today())[:10])
     except Exception as e:  
         continue
     # doc = lh.fromstring(page.content)
