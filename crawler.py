@@ -24,11 +24,11 @@ for i in range(leng):
     # page = requests.get(line[:-1])
     # attrs = {ttypes[i][:-1] : tnames[i][:-1]}
     try:
-        table = pd.read_html(lines[i][:-1],match = '노출일시')[0]
-        table.to_csv(os.path.join(BASE_DIR, 'data\\'+ str(datetime.today())[:10] + locs[i][:-1] +'.csv'))
+        table = pd.concat(pd.read_html(lines[i][:-1],match = '노출일시'))
+        table.to_csv(os.path.join(BASE_DIR, 'data/'+ str(datetime.today())[:10] + locs[i][:-1] +'.csv'))
         print(table)
         print(str(datetime.today())[:10])
-    except URLError as e:  
+    except Exception as e:  
         continue
     # doc = lh.fromstring(page.content)
     # tr_elements = doc.xpath('//tr')
