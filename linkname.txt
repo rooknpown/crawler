@@ -10,5 +10,7 @@ daejeon
 ulsan
 sejong
 jeju
+pohang
+seoul
 bucheon
 daegu

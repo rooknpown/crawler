@@ -10,5 +10,7 @@ https://www.daejeon.go.kr/corona19/index.do?menuId=0008
 https://www.ulsan.go.kr/u/health/contents.ulsan?mId=001002003000000000
 https://www.sejong.go.kr/bbs/R3621/list.do
 https://covid19.jeju.go.kr/
+http://www.pohang.go.kr/COVID-19.html
+https://news.seoul.go.kr/welfare/archives/513105#route_page_top
 http://www.bucheon.go.kr/site/main/corona
 http://covid19.daegu.go.kr/00937400.html
